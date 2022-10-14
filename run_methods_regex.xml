@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run Specific Packages">
+
+    <test name="Tests">
+
+
+         <classes>
+
+             <class name="ccTests.TestNGDemoTest">
+
+                 <methods>
+                     <include name="google.*"/>
+
+                 </methods>
+
+
+             </class>
+
+             <class name="another.TestPriority">
+
+                 <methods>
+                     <include name=".*Test"/>
+                 </methods>
+
+
+             </class>
+
+
+
+
+         </classes>
+
+
+    </test>
+
+
+
+
+</suite>
