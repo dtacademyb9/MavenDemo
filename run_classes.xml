@@ -8,7 +8,7 @@
          <classes>
 
              <class name="another.TestPriority"/>
-             <class name="ccTests.TestNGDemoTest"/>
+             <class name="googleTests.GoogleSearchTests"/>
 
 
 

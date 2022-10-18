@@ -7,7 +7,7 @@
 
            <packages>
                <package name="another"/>
-               <package name="ccTests"/>
+               <package name="googleTests"/>
 
            </packages>
 

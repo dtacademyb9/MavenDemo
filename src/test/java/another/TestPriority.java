@@ -9,7 +9,7 @@ public class TestPriority {
 
 
 //    @Ignore
-    @Test (priority = -34)
+    @Test (priority = -34, groups = {"smoke"})
     public void aTest(){
         System.out.println("A");
     }
@@ -37,7 +37,7 @@ public class TestPriority {
         System.out.println("E");
     }
 
-    @Test
+    @Test (groups = {"title"})
     public void fTest(){
         System.out.println("F");
     }

@@ -6,7 +6,7 @@
 
         <classes>
             
-            <class name="ccTests.TestNGDemoTest"></class>
+            <class name="googleTests.GoogleSearchTests"></class>
 
             
         </classes>

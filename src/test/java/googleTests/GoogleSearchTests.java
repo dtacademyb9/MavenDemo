@@ -1,4 +1,4 @@
-package ccTests;
+package googleTests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -8,32 +8,32 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class TestNGDemoTest {
+public class GoogleSearchTests {
 
     WebDriver driver;
 
-    @BeforeClass
+    @BeforeClass  (alwaysRun = true)
     public void setupClass(){
         WebDriverManager.chromedriver().setup();
     }
 
-    @AfterClass
+    @AfterClass (alwaysRun = true)
     public void tearDownClass(){
         System.out.println("Actions that are done after everything is done within the class");
     }
 
-    @BeforeMethod  // configuration methods
+    @BeforeMethod (alwaysRun = true) // alwaysRun should be set to true in order for group tests to run correctly
     public void setupMethod(){
-               driver =  new ChromeDriver();
+        driver =  new ChromeDriver();
         driver.get("https://www.google.com/");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDownMethod(){
         driver.quit();
     }
 
-    @Test ( priority = 2)
+    @Test ( priority = 2, groups = {"title", "smoke"})
     public void googleSearchTest(){
 
         driver.findElement(By.name("q")).sendKeys("Iphone", Keys.ENTER);
@@ -50,7 +50,7 @@ public class TestNGDemoTest {
     }
 
 
-    @Test (priority = 5)
+    @Test (priority = 5, groups = {"smoke"})
     public void googleSearchTest5(){
 
         driver.findElement(By.name("q")).sendKeys("Iphone", Keys.ENTER);

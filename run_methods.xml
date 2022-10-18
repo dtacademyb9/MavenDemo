@@ -7,7 +7,7 @@
 
          <classes>
 
-             <class name="ccTests.TestNGDemoTest">
+             <class name="googleTests.GoogleSearchTests">
 
                  <methods>
                      <include name="googleSearchTestFailing"/>

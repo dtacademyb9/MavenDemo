@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run Specific Packages">
+
+    <test name="Tests">
+
+        <groups>
+            <run>
+                <include name="title"/>
+
+            </run>
+
+        </groups>
+
+
+
+
+
+         <classes>
+             <class name="another.TestPriority"/>
+             <class name="googleTests.GoogleSearchTests"/>
+             <class name="googleTests.GoogleSearchTests2"/>
+         </classes>
+
+
+    </test>
+
+
+
+
+</suite>
