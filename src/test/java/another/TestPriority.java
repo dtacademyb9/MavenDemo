@@ -18,7 +18,11 @@ public class TestPriority {
 //    @Test (priority = 0, enabled = false)
     @Test (priority = 0)
     public void bTest(){
-        System.out.println("B");
+        while(true){
+            System.out.println("Blavla");
+        }
+
+//        System.out.println("B");
     }
 
 

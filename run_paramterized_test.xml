@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run Specific Packages">
+
+    <test name="Test 1">
+
+        <parameter name="link" value="https://www.google.com/"/>
+        <parameter name="searchTerm" value="sony"/>
+        <parameter name="age" value="45"/>
+        
+
+         <classes>
+
+             <class name="googleTests.Parametrization">
+                 <methods>
+                     <include name="googleSearchTest2"></include>
+                 </methods>
+             </class>
+         </classes>
+
+
+    </test>
+
+    <test name="Test 2">
+
+        <parameter name="link" value="https://www.google.com/"/>
+        <parameter name="searchTerm" value="apple"/>
+        <parameter name="age" value="235"/>
+
+        <classes>
+
+            <class name="googleTests.Parametrization">
+                <methods>
+                    <include name="googleSearchTest2"></include>
+                </methods>
+            </class>
+        </classes>
+
+
+    </test>
+
+
+
+
+</suite>
