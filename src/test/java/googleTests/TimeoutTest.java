@@ -1,5 +1,6 @@
 package googleTests;
 
+import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -54,6 +55,7 @@ public class TimeoutTest {
 
         }
     }
+
 
     @Test
     public void verifySearchResults2(){
